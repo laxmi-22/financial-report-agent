@@ -1,0 +1,82 @@
+
+.stApp {
+        background-color: #d0d8f2;        
+        }
+.block-container {
+                padding-top: 1rem;                   
+            }
+[data-testid=stSidebar] {
+    background-color: #6285bb;
+        color: white
+        }
+button[kind="primary"] {
+        background-color: #496C9F;
+        }
+button[kind="primary"]:hover {
+            background:linear-gradient(to bottom, #408c99 5%, #587aad 100%);	
+        }
+button[kind="primary"]:active {
+            position:relative;
+            top:3px;    
+        }
+button[kind="secondary"] {
+            background-color: #74041e;
+            }
+.custom-title {
+    font-size: 20px;  /* Change this value to adjust font size */
+    color: #4CAF50;   /* Optional: Change the color */
+    font-weight: bold; /* Optional: Font weight (bold, normal, etc.) */
+    text-align: center; /* Optional: Text alignment (left, right, center) */
+}
+
+.custom-title1 {
+    font-size: 30px;  /* Change this value to adjust font size */
+    color: #4CAF50;   /* Optional: Change the color */
+    font-weight: bold; /* Optional: Font weight (bold, normal, etc.) */
+    text-align: center; /* Optional: Text alignment (left, right, center) */
+}
+.status {
+    font-size: 14px;  /* Change this value to adjust font size */
+    font-style: italic;
+    color: #9c1010;   /* Optional: Change the color */    
+    text-align: left; /* Optional: Text alignment (left, right, center) */
+}
+/* Targeting the tabs */
+.stTabs [data-baseweb="tab"] {
+    background-color: #dcdcdc;
+    border-top-left-radius: 25px;  /* Curve top-left */
+    border-top-right-radius: 25px; /* Curve top-right */
+    border-bottom-left-radius: 0;  /* No curve bottom-left */
+    border-bottom-right-radius: 0; /* No curve bottom-right */
+    padding: 10px;
+    border: 2px solid #d0d0d0;     /* Light border for rectangle */
+    border-right: none;             /* Remove right border for adjacent tabs */
+    margin-bottom: -5px;           /* Avoid gap between tab and content */
+    min-width: 100px;             /* Adjust the width here */
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    background-color: #add8e6;
+    border: 2px solid #000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    background-color: #496C9F;
+    color: white;
+    border: 2px solid #000;
+    border-top-left-radius: 25px;  /* Curve top-left */
+    border-top-right-radius: 25px; /* Curve top-right */
+    border-bottom-left-radius: 0;  /* No curve bottom-left */
+    border-bottom-right-radius: 0; /* No curve bottom-right */
+}
+
+/* Reset or override the styles for global elements */
+div.stTabs > div {
+    left: 0px;
+    top: 0px;
+    min-width: 0px;             /* Adjust the width here */
+}
+/* [data-testid="stMarkdownContainer"] ol{
+    list-style-position: inside;
+} */
