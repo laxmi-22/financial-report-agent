@@ -3,6 +3,7 @@ import os
 import pandas as pd
 import datetime as dt
 import calendar
+from datetime import date
 
 # procedure to apply css(format) to streamlit page
 # css file is placed in project folder with name as localcss.css
@@ -34,4 +35,28 @@ def set_date():
     num_days_in_current_month = calendar.monthrange(ct_yr, ct_month)[1]
     sdate = dt.date(ct_yr, ct_month, 1)
     edate = dt.date(ct_yr, ct_month, num_days_in_current_month)
+
     return sdate,edate
+
+def validate_dates(start_date_input, end_date_input):
+        """
+        Validates the start and end dates based on the following rules:
+        1. Start date cannot be in the future.
+        2. Start date must be before or on the same day as the end date.
+        
+        Returns True if valid, otherwise displays an error and returns False.
+        """
+        today = date.today()
+
+        if start_date_input > today:            
+            st.error("❌ Error: Start date cannot be a future date.")
+            # Stop the script execution here
+            return False
+        
+        if start_date_input > end_date_input:            
+            st.error("❌ Error: Start date must be before the end date.")
+            # Stop the script execution here
+            return False
+        
+        return True
+    #validation ends
