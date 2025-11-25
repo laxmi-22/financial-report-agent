@@ -3,7 +3,7 @@
         background-color: #d0d8f2;        
         }
 .block-container {
-                padding-top: 1rem;                   
+                padding-top: 3rem;                   
             }
 [data-testid=stSidebar] {
     background-color: #6285bb;
@@ -79,4 +79,5 @@ div.stTabs > div {
 }
 /* [data-testid="stMarkdownContainer"] ol{
     list-style-position: inside;
+
 } */
