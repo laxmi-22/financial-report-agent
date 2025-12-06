@@ -11,6 +11,9 @@ It generates dynamic financial reports, validates evaluation criteria, and provi
 - Cloud deployment on Streamlit Community Cloud
 - Defense-ready documentation with reproducibility and transparency
 
+**Application URL :** https://financial-report-agent-usne9wbrnz7lfrypgr4sbz.streamlit.app/
+**Demo Video :** https://youtu.be/sKlGTjcW6vE
+
 📂 Project Structure
 
    ├── agents/                       # Agent definition
